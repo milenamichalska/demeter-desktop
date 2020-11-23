@@ -192,23 +192,17 @@ export class OrdersChartComponent implements AfterViewInit, OnDestroy, OnChanges
         normal: {
           width: eTheme.lineWidth,
           type: eTheme.lineStyle,
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-            offset: 0,
-            color: eTheme.secondLineGradFrom,
-          }, {
-            offset: 1,
-            color: eTheme.secondLineGradTo,
-          }]),
+          color: '#ffe750',
         },
       },
       areaStyle: {
         normal: {
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
-            color: eTheme.secondAreaGradFrom,
+            color: '#ffe750',
           }, {
             offset: 1,
-            color: eTheme.secondAreaGradTo,
+            color: '#ffffff',
           }]),
         },
       },
@@ -236,23 +230,17 @@ export class OrdersChartComponent implements AfterViewInit, OnDestroy, OnChanges
         normal: {
           width: eTheme.lineWidth,
           type: eTheme.lineStyle,
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-            offset: 0,
-            color: eTheme.thirdLineGradFrom,
-          }, {
-            offset: 1,
-            color: eTheme.thirdLineGradTo,
-          }]),
+          color: '#2cc788',
         },
       },
       areaStyle: {
         normal: {
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
-            color: eTheme.thirdAreaGradFrom,
+            color: '#69deae',
           }, {
             offset: 1,
-            color: eTheme.thirdAreaGradTo,
+            color: '#ffffff',
           }]),
         },
       },

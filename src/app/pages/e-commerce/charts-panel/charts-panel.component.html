@@ -1,8 +1,15 @@
-<nb-flip-card [showToggleButton]="false">
-  <nb-card-front>
-    <nb-card>
-      <ngx-stats-card-back></ngx-stats-card-back>
-      <nb-icon icon="alert-circle-outline" pack="eva" class="flip-icon" status="warning"></nb-icon>
-    </nb-card>
-  </nb-card-front>
-</nb-flip-card>
+<nb-card>
+  <nb-card-header>
+    <span class="title">
+      Prediction overview
+    </span>
+  </nb-card-header>
+  <nb-card-body>
+    <ngx-chart-panel-header [type]="period"
+                            (periodChange)="setPeriodAndGetChartData($event)">
+    </ngx-chart-panel-header>
+    <div class="chart-container">
+      <ngx-orders-chart #ordersChart [ordersChartData]="ordersChartData"></ngx-orders-chart>
+    </div>
+  </nb-card-body>
+</nb-card>

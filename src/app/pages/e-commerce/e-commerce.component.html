@@ -2,8 +2,7 @@
   <div class="col-md-12">
     <div class="row">
       <div class="col-md-3">
-        <nb-card>
-          <nb-card-body>
+        <nb-card class="col-md-12 map-card">
             <div class="row">
               <div class="col-md-12">
                 <img class="map-img" src="../../../../../assets/images/map.png">
@@ -14,25 +13,57 @@
                 </button>
               </div>
             </div>
-          </nb-card-body>
+        </nb-card>
+
+        <nb-card class="col-md-12">
+          <nb-card-header>
+            <span class="title">
+              Upcoming tasks
+            </span>
+          </nb-card-header>
+          <nb-list class="overflow-hidden">
+            <nb-list-item>
+              <div class="task-date">
+                <b>24</b> <br>
+                <b>Dec</b>
+              </div>
+              <div>
+                Field1<br><b>Strong Irrigation</b>
+              </div>
+            </nb-list-item>
+          </nb-list>
+          <div class="row map-card">
+            <div class="col-md-12">
+              <button nbButton class="full-width" status="primary">
+                Go to tasks view
+              </button>
+            </div>
+          </div>
         </nb-card>
       </div>
+
       <div class="col-md-9">
         <nb-card>
-          <nb-card-header>
+          <!-- <nb-card-header>
             <span class="title">
               Prediction overview
             </span>
           </nb-card-header>
           <nb-card-body>
-            hejka
-          </nb-card-body>
+            <div class="row">
+              <div class="col-md-9">wykresik</div>
+              <div class="col-md-3">jakieś dane</div>
+            </div>
+          </nb-card-body> -->
+          <ngx-ecommerce-charts></ngx-ecommerce-charts>
         </nb-card>
       </div>
+
     </div>
 
 
     <div class="row">
+
       <div class="col-md-4">
         <nb-card>
           <nb-card-header>
@@ -41,9 +72,130 @@
               <nb-icon icon="alert-circle-outline" pack="eva" class="warn-icon" status="warning"></nb-icon>
             </span>
           </nb-card-header>
-          hejka
+          <nb-card-body>
+            <div class="row">
+              <div class="col-md-4">
+                <img class="map-img" src="../../../../../assets/images/listek3.png">
+              </div>
+              <div class="col-md-8">
+                Plant: <b>Corn</b><br>
+                Growth phase: <b>III</b><br>
+                Health: <b>Endangered</b>
+                <br>
+                <button nbButton class="full-width" status="primary" ghost>
+                  Field details
+                </button>
+              </div>
+            </div>
+          </nb-card-body>
         </nb-card>
       </div>
+
+      <div class="col-md-4">
+        <nb-card>
+          <nb-card-header>
+            <span class="title">
+              Field2
+              <nb-icon icon="alert-circle-outline" pack="eva" class="warn-icon" status="warning"></nb-icon>
+            </span>
+          </nb-card-header>
+          <nb-card-body>
+            <div class="row">
+              <div class="col-md-4">
+                <img class="map-img" src="../../../../../assets/images/listek2.png">
+              </div>
+              <div class="col-md-8">
+                Plant: <b>Wheat</b><br>
+                Growth phase: <b>II</b><br>
+                Health: <b>Endangered</b>
+                <br>
+                <button nbButton class="full-width" status="primary" ghost>
+                  Field details
+                </button>
+              </div>
+            </div>
+          </nb-card-body>
+        </nb-card>
+      </div>
+
+      <div class="col-md-4">
+        <nb-card>
+          <nb-card-header>
+            <span class="title">
+              Field3
+            </span>
+          </nb-card-header>
+          <nb-card-body>
+            <div class="row">
+              <div class="col-md-4">
+                <img class="map-img" src="../../../../../assets/images/listek1.png">
+              </div>
+              <div class="col-md-8">
+                Plant: <b>Potatoes</b><br>
+                Growth phase: <b>II</b><br>
+                Health: <b>Good</b>
+                <br>
+                <button nbButton class="full-width" status="primary" ghost>
+                  Field details
+                </button>
+              </div>
+            </div>
+          </nb-card-body>
+        </nb-card>
+      </div>
+
+      <div class="col-md-4">
+        <nb-card>
+          <nb-card-header>
+            <span class="title">
+              Field4
+            </span>
+          </nb-card-header>
+          <nb-card-body>
+            <div class="row">
+              <div class="col-md-4">
+                <img class="map-img" src="../../../../../assets/images/listek4.png">
+              </div>
+              <div class="col-md-8">
+                Plant: <b>Corn</b><br>
+                Growth phase: <b>I</b><br>
+                Health: <b>Good</b>
+                <br>
+                <button nbButton class="full-width" status="primary" ghost>
+                  Field details
+                </button>
+              </div>
+            </div>
+          </nb-card-body>
+        </nb-card>
+      </div>
+
+      <div class="col-md-4">
+        <nb-card>
+          <nb-card-header>
+            <span class="title">
+              Field5
+            </span>
+          </nb-card-header>
+          <nb-card-body>
+            <div class="row">
+              <div class="col-md-4">
+                <img class="map-img" src="../../../../../assets/images/listek4.png">
+              </div>
+              <div class="col-md-8">
+                Plant: <b>Wheat</b><br>
+                Growth phase: <b>I</b><br>
+                Health: <b>Good</b>
+                <br>
+                <button nbButton class="full-width" status="primary" ghost>
+                  Field details
+                </button>
+              </div>
+            </div>
+          </nb-card-body>
+        </nb-card>
+      </div>
+
     </div>
   </div>
 </div>
