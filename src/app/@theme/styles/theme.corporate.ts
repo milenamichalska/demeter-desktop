@@ -76,7 +76,7 @@ export const CORPORATE_THEME = {
     profitBarAnimationEchart: {
       textColor: baseThemeVariables.fgText,
 
-      firstAnimationBarColor: baseThemeVariables.primary,
+      firstAnimationBarColor: baseThemeVariables.warnin,
       secondAnimationBarColor: baseThemeVariables.success,
 
       splitLineStyleOpacity: '1',

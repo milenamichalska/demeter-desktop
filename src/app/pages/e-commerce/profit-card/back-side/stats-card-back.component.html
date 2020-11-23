@@ -1,21 +1,20 @@
 <nb-card-header>
-  <i class="ion-social-usd"></i>
-  <span class="title">Profit</span>
+  <span class="title">
+    Corn field
+  </span>
 </nb-card-header>
 <nb-card-body>
-  <div class="info">
-    <div class="period">
-      <div class="caption">Jun 1 - Jun 30</div>
-      <div class="label">
-        <span class="currency">$</span>300
-      </div>
+  <div class="row">
+    <div class="col-md-1 p-30">
+      <img class="vege-icon" src="../../../../../assets/icons/kukurydza.png">
     </div>
-    <div class="period latest">
-      <div class="caption">Jul 1 - Jul 31</div>
-      <div class="label">
-        <span class="currency">$</span>860
-      </div>
+    <div class="col-md-8 p-30">
+      <ngx-stats-bar-animation-chart [linesData]="linesData"></ngx-stats-bar-animation-chart>
+    </div>
+    <div class="col-md-3">
+      <b>Harvest term:</b> 19.08.2021 <br>
+      <b>Harvest quantity:</b> 700 t <br>
+      <b>Profit per t:</b> 325$ <br>
     </div>
   </div>
-  <ngx-stats-ares-chart [points]="chartData"></ngx-stats-ares-chart>
 </nb-card-body>

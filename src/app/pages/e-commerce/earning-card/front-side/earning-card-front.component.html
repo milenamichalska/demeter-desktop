@@ -1,7 +1,5 @@
 <nb-card-header>
-  <nb-select [selected]="selectedCurrency" (selectedChange)="changeCurrency($event)">
-    <nb-option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</nb-option>
-  </nb-select>
+  Heja
 </nb-card-header>
 <nb-card-body>
   <div class="chart-info">
@@ -17,7 +15,4 @@
       {{ earningLiveUpdateCardData.delta.value }}%
     </div>
   </div>
-  <ngx-earning-live-update-chart
-    [liveUpdateChartData]="liveUpdateChartData">
-  </ngx-earning-live-update-chart>
 </nb-card-body>

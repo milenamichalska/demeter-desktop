@@ -1,7 +1,21 @@
 <nb-card-header>
-  <i class="ion-social-usd"></i>
-  <span class="title">Profit</span>
+  <span class="title">
+    Beetroot field
+    <nb-icon icon="alert-circle-outline" pack="eva" class="warn-icon" status="warning"></nb-icon>
+  </span>
 </nb-card-header>
 <nb-card-body>
-  <ngx-stats-bar-animation-chart [linesData]="linesData"></ngx-stats-bar-animation-chart>
+  <div class="row">
+    <div class="col-md-1 p-30">
+      <img class="vege-icon" src="../../../../../assets/icons/burak.png">
+    </div>
+    <div class="col-md-8 p-30">
+      <ngx-stats-bar-animation-chart [linesData]="linesData"></ngx-stats-bar-animation-chart>
+    </div>
+    <div class="col-md-3">
+      <b>Harvest term:</b> 25.05.2021 <br>
+      <b>Harvest quantity:</b> 100 t <br>
+      <b>Profit per t:</b> 1000$ <br>
+    </div>
+  </div>
 </nb-card-body>

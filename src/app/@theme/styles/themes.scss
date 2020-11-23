@@ -22,6 +22,16 @@ $nb-themes: nb-register-theme((
   slide-out-background: #f7f9fc,
   slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
   slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+
+  color-primary-100: #FFFAD0,
+  color-primary-200: #FFF5A1,
+  color-primary-300: #FFEE73,
+  color-primary-400: #FFE750,
+  color-primary-500: #FFDC16,
+  color-primary-600: #DBB910,
+  color-primary-700: #B7980B,
+  color-primary-800: #937807,
+  color-primary-900: #7A6104,
 ), default, default);
 
 $nb-themes: nb-register-theme((

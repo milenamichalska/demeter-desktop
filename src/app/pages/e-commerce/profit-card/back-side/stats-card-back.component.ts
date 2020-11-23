@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { StatsBarData } from '../../../../@core/data/stats-bar';
+import { ProfitBarAnimationChartData } from '../../../../@core/data/profit-bar-animation-chart';
 import { takeWhile } from 'rxjs/operators';
 
 @Component({
@@ -7,21 +7,17 @@ import { takeWhile } from 'rxjs/operators';
   styleUrls: ['./stats-card-back.component.scss'],
   templateUrl: './stats-card-back.component.html',
 })
-export class StatsCardBackComponent implements OnDestroy {
+export class StatsCardBackComponent {
 
   private alive = true;
 
-  chartData: number[];
+  linesData: { firstLine: number[]; secondLine: number[] };
 
-  constructor(private statsBarData: StatsBarData) {
-    this.statsBarData.getStatsBarData()
+  constructor(private profitBarAnimationChartService: ProfitBarAnimationChartData) {
+    this.profitBarAnimationChartService.getChartData()
       .pipe(takeWhile(() => this.alive))
-      .subscribe((data) => {
-        this.chartData = data;
+      .subscribe((linesData) => {
+        this.linesData = linesData;
       });
-  }
-
-  ngOnDestroy() {
-    this.alive = false;
   }
 }

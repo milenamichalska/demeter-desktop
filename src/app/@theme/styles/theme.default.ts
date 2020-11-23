@@ -82,7 +82,7 @@ export const DEFAULT_THEME = {
     profitBarAnimationEchart: {
       textColor: baseThemeVariables.fgText,
 
-      firstAnimationBarColor: baseThemeVariables.primary,
+      firstAnimationBarColor: baseThemeVariables.warning,
       secondAnimationBarColor: baseThemeVariables.success,
 
       splitLineStyleOpacity: '1',
@@ -118,19 +118,19 @@ export const DEFAULT_THEME = {
       countryBorderColor: baseThemeVariables.border4,
       countryFillColor: baseThemeVariables.bg3,
       countryBorderWidth: '1',
-      hoveredCountryBorderColor: baseThemeVariables.primary,
-      hoveredCountryFillColor: baseThemeVariables.primaryLight,
+      hoveredCountryBorderColor: baseThemeVariables.warning,
+      hoveredCountryFillColor: baseThemeVariables.warningLight,
       hoveredCountryBorderWidth: '1',
 
       chartAxisLineColor: baseThemeVariables.border4,
       chartAxisTextColor: baseThemeVariables.fg,
       chartAxisFontSize: '16',
-      chartGradientTo: baseThemeVariables.primary,
-      chartGradientFrom: baseThemeVariables.primaryLight,
+      chartGradientTo: baseThemeVariables.warning,
+      chartGradientFrom: baseThemeVariables.warningLight,
       chartAxisSplitLine: baseThemeVariables.separator,
-      chartShadowLineColor: baseThemeVariables.primaryLight,
+      chartShadowLineColor: baseThemeVariables.warningLight,
 
-      chartLineBottomShadowColor: baseThemeVariables.primary,
+      chartLineBottomShadowColor: baseThemeVariables.warning,
 
       chartInnerLineColor: baseThemeVariables.bg2,
     },

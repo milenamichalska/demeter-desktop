@@ -31,3 +31,62 @@
 
   @include nb-overrides();
 };
+
+img.map-img {
+  width: 100%;
+}
+
+img.vege-icon {
+  width: 70px;
+  height: 70px;
+}
+
+img.vege-icon-tiny {
+  width: 40px;
+  height: 40px;
+}
+
+div.p-30 {
+  text-align: center;
+}
+
+nb-card-body {
+  padding: 1rem 1.5rem !important;
+}
+
+.flip-icon {
+  right: 1rem !important;
+}
+
+.mapa {
+  padding: 15px;
+}
+
+.map-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.stats-wrapper {
+  padding: 30px;
+}
+
+#mapimg {
+  margin-left: 50%;
+  min-width: 700px;
+  transform: translateX(-50%);
+}
+
+#yellow, #lgreen, #dgreen {
+  opacity: 70%;
+}
+
+#yellow:hover, #lgreen:hover, #dgreen:hover {
+  opacity: 100%;
+}
+
+.goto-btn {
+  padding-top: 15px;
+}

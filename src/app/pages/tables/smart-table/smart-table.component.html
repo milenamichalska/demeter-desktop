@@ -1,9 +1,22 @@
 <nb-card>
   <nb-card-header>
-    Smart Table
+    <img class="vege-icon-tiny" src="../../../../../assets/icons/doniczka.png">
+    Upcoming tasks to keep up the prediction
   </nb-card-header>
 
   <nb-card-body>
+    <nb-alert status="primary">Beetroot field watering</nb-alert>
+  </nb-card-body>
+</nb-card>
+
+<nb-card>
+  <nb-card-header>
+    <img class="vege-icon-tiny" src="../../../../../assets/icons/lopatka.png">
+    Manage tasks
+  </nb-card-header>
+
+  <nb-card-body>
+    You can add or remove suggested tasks. You are the boss! <br><br>
     <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
     </ng2-smart-table>
   </nb-card-body>

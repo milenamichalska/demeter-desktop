@@ -1,50 +1,47 @@
-<div class="row">
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Pie</nb-card-header>
-      <nb-card-body>
-        <ngx-chartjs-pie></ngx-chartjs-pie>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Bar</nb-card-header>
-      <nb-card-body>
-        <ngx-chartjs-bar></ngx-chartjs-bar>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Line</nb-card-header>
-      <nb-card-body>
-        <ngx-chartjs-line></ngx-chartjs-line>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Multiple x-axis</nb-card-header>
-      <nb-card-body>
-        <ngx-chartjs-multiple-xaxis></ngx-chartjs-multiple-xaxis>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Bar Horizontal</nb-card-header>
-      <nb-card-body>
-        <ngx-chartjs-bar-horizontal></ngx-chartjs-bar-horizontal>
-      </nb-card-body>
-    </nb-card>
-  </div>
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Radar</nb-card-header>
-      <nb-card-body>
-        <ngx-chartjs-radar></ngx-chartjs-radar>
-      </nb-card-body>
-    </nb-card>
-  </div>
-</div>
+<nb-card>
+  <nb-tabset fullWidth>
+
+    <nb-tab tabTitle="Corn field">
+      <div class="row">
+        <div class="col-lg-6">
+          <nb-card>
+            <nb-card-header>Field Fertilization</nb-card-header>
+            <nb-card-body>
+              <ngx-chartjs-pie></ngx-chartjs-pie>
+              Suggested product: <b>POLIFOSKA 21</b><br>
+            </nb-card-body>
+          </nb-card>
+        </div>
+        <div class="col-lg-6">
+          <nb-card>
+            <nb-card-header>Crop trends</nb-card-header>
+            <nb-card-body>
+              <ngx-chartjs-bar></ngx-chartjs-bar>
+            </nb-card-body>
+          </nb-card>
+        </div>
+        <div class="col-lg-6">
+          <nb-card>
+            <nb-card-header></nb-card-header>
+            <nb-card-body>
+              <ngx-chartjs-line></ngx-chartjs-line>
+            </nb-card-body>
+          </nb-card>
+        </div>
+        <div class="col-lg-6">
+          <nb-card>
+            <nb-card-header>Current and potential data usage</nb-card-header>
+            <nb-card-body>
+              <ngx-chartjs-multiple-xaxis></ngx-chartjs-multiple-xaxis><br>
+            </nb-card-body>
+          </nb-card>
+        </div>
+      </div>
+    </nb-tab>
+
+    <nb-tab tabTitle="Beetroot field">
+      Siemaa
+    </nb-tab>
+
+  </nb-tabset>
+</nb-card>

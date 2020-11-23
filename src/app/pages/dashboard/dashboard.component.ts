@@ -1,4 +1,4 @@
-import {Component, OnDestroy} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { takeWhile } from 'rxjs/operators' ;
 import { SolarData } from '../../@core/data/solar';
@@ -14,7 +14,7 @@ interface CardSettings {
   styleUrls: ['./dashboard.component.scss'],
   templateUrl: './dashboard.component.html',
 })
-export class DashboardComponent implements OnDestroy {
+export class DashboardComponent implements OnInit, OnDestroy {
 
   private alive = true;
 
@@ -95,5 +95,23 @@ export class DashboardComponent implements OnDestroy {
 
   ngOnDestroy() {
     this.alive = false;
+  }
+
+  public stats = false;
+
+  ngOnInit() {
+    let yellow = document.getElementById('yellow');
+    
+    yellow.addEventListener('click', function (event) {
+      console.log('yellow');
+        // this.stats = 'yellow';
+    }, false);
+
+    var dgreen = document.getElementById('dgreen');
+    
+    dgreen.addEventListener('click', function (event) {
+      console.log('green');
+        // this.stats = 'green';
+    }, false);
   }
 }

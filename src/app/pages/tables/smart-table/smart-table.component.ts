@@ -31,24 +31,16 @@ export class SmartTableComponent {
         type: 'number',
       },
       firstName: {
-        title: 'First Name',
+        title: 'Field ID',
         type: 'string',
       },
       lastName: {
-        title: 'Last Name',
+        title: 'Action title',
         type: 'string',
       },
       username: {
-        title: 'Username',
+        title: 'Urgency',
         type: 'string',
-      },
-      email: {
-        title: 'E-mail',
-        type: 'string',
-      },
-      age: {
-        title: 'Age',
-        type: 'number',
       },
     },
   };

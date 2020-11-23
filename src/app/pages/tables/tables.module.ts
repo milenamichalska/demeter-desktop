@@ -3,6 +3,7 @@ import { NbCardModule, NbIconModule, NbInputModule, NbTreeGridModule } from '@ne
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { ThemeModule } from '../../@theme/theme.module';
+import { NbAlertModule } from '@nebular/theme';
 import { TablesRoutingModule, routedComponents } from './tables-routing.module';
 import { FsIconComponent } from './tree-grid/tree-grid.component';
 
@@ -15,6 +16,7 @@ import { FsIconComponent } from './tree-grid/tree-grid.component';
     ThemeModule,
     TablesRoutingModule,
     Ng2SmartTableModule,
+    NbAlertModule,
   ],
   declarations: [
     ...routedComponents,

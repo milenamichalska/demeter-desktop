@@ -1,10 +1,7 @@
-<div class="row">
-  <div class="col-xxl-5">
-    <div class="row">
-      <div class="col-md-7">
-        <nb-card class="mapa">
-          <div class="map-wrapper">
-<svg (click)="stats = !stats"
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -52,6 +49,40 @@
          inkscape:connector-curvature="0" />
     </marker>
   </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="440.42453"
+     inkscape:cy="323.40454"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1315"
+     inkscape:window-x="-13"
+     inkscape:window-y="-13"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -138,71 +169,3 @@
        inkscape:connector-curvature="0" />
   </g>
 </svg>
-
-          </div>
-
-        </nb-card>
-      </div>
-      <div class="col-md-5">
-        <div class="row">
-          <nb-card class="col-md-12">
-            <nb-card-header>
-              <img class="vege-icon-tiny" src="../../../../../assets/icons/traktor.png">
-              Field Overview
-            </nb-card-header>
-            <nb-card-body>
-              <div *ngIf="stats">
-                Ordinary corn field with extraordinary crops!<br><br>
-                <b>Netto worth:</b> 1 562 767$<br>
-                <b>Predicted crops quantity:</b> 774 894 t<br>
-                <b>Alert level:</b> low<br>
-              </div>
-              <div *ngIf="!stats">
-                Ordinary beetroot field with extraordinary crops!<br><br>
-                <b>Netto worth:</b> 72 767$<br>
-                <b>Predicted crops quantity:</b> 4 292 t<br>
-                <b>Alert level:</b> medium<br>
-              </div>
-            </nb-card-body>
-          </nb-card>
-
-          <nb-card class="col-md-12">
-            <nb-card-header>
-              <img class="vege-icon-tiny" src="../../../../../assets/icons/konewka.png">
-              Environmental data
-            </nb-card-header>
-            <nb-card-body>
-              <div *ngIf="stats">
-                Overall score
-                <nb-progress-bar [value]="80" status="primary"></nb-progress-bar><br>
-                Pollution
-                <nb-progress-bar [value]="20" status="warning"></nb-progress-bar><br>
-                Fertilization level
-                <nb-progress-bar [value]="80" status="success"></nb-progress-bar><br>
-                Irrigation
-                <nb-progress-bar [value]="70" status="info"></nb-progress-bar><br>
-                <button nbButton ghost class="full-width" status="primary">
-                  See detailed predictions
-                </button>
-              </div>
-
-              <div *ngIf="!stats">
-                Overall score
-                <nb-progress-bar [value]="40" status="primary"></nb-progress-bar><br>
-                Pollution
-                <nb-progress-bar [value]="20" status="warning"></nb-progress-bar><br>
-                Fertilization level
-                <nb-progress-bar [value]="50" status="success"></nb-progress-bar><br>
-                Irrigation
-                <nb-progress-bar [value]="40" status="info"></nb-progress-bar><br>
-                <button nbButton ghost class="full-width" status="primary">
-                  See detailed predictions
-                </button>
-              </div>
-            </nb-card-body>
-          </nb-card>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
