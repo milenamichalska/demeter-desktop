@@ -79,11 +79,11 @@ nb-card-body {
   transform: translateX(-50%);
 }
 
-#yellow, #lgreen, #dgreen {
+#yellow, #lgreen, #dgreen, #orange, #blue, #red, #lime {
   opacity: 70%;
 }
 
-#yellow:hover, #lgreen:hover, #dgreen:hover {
+#yellow:hover, #lgreen:hover, #dgreen:hover, #orange:hover, #blue:hover, #red:hover, #lime:hover {
   opacity: 100%;
 }
 
@@ -106,4 +106,8 @@ nb-card-body {
   background-color: #ECECEC;
   border-radius: 10px;
   text-align: center;
+}
+
+.padding-30 {
+  padding: 30px;
 }

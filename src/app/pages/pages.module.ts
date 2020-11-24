@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NbMenuModule, NbSidebarModule } from '@nebular/theme';
+import { NbMenuModule, NbSidebarModule, NbLayoutModule } from '@nebular/theme';
 
 import { ThemeModule } from '../@theme/theme.module';
 import { PagesComponent } from './pages.component';
@@ -17,6 +17,7 @@ import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
     ECommerceModule,
     MiscellaneousModule,
     NbSidebarModule.forRoot(),
+    NbLayoutModule,
   ],
   declarations: [
     PagesComponent,

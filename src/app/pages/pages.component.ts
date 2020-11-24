@@ -6,10 +6,19 @@ import { MENU_ITEMS } from './pages-menu';
   selector: 'ngx-pages',
   styleUrls: ['pages.component.scss'],
   template: `
-    <ngx-one-column-layout>
+  <nb-layout windowMode>
+      <nb-layout-header fixed>
+        <ngx-header></ngx-header>
+      </nb-layout-header>
+
+      <nb-sidebar class="menu-sidebar" tag="menu-sidebar" style="z-index: 100;" responsive>
       <nb-menu [items]="menu"></nb-menu>
-      <router-outlet></router-outlet>
-    </ngx-one-column-layout>
+      </nb-sidebar>
+
+      <nb-layout-column class="no-padding">
+        <router-outlet></router-outlet>
+      </nb-layout-column>
+    </nb-layout>
   `,
 })
 export class PagesComponent {

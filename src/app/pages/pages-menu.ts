@@ -8,8 +8,8 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   },
   {
-    title: 'Growth',
-    icon: 'droplet-outline',
+    title: 'Map View',
+    icon: 'map-outline',
     link: '/pages/growth',
   },
   {

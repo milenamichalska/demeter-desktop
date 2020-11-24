@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { ChartModule } from 'angular2-chartjs';
-import { NbCardModule, NbTabsetModule } from '@nebular/theme';
+import { NbCardModule, NbTabsetModule, NbSidebarModule, NbLayoutModule } from '@nebular/theme';
 
 import { ThemeModule } from '../../@theme/theme.module';
 
@@ -32,6 +32,8 @@ const components = [
     ChartModule,
     NbCardModule,
     NbTabsetModule,
+    NbSidebarModule,
+    NbLayoutModule,
   ],
   declarations: [...routedComponents, ...components],
 })
